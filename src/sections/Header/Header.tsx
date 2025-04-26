@@ -6,17 +6,17 @@ import { AppBar, Button, Divider, IconButton, Stack, Toolbar, Tooltip } from '@m
 import { useNotifications } from '@toolpad/core/useNotifications';
 
 import { repository, title } from '@/config';
-import { useHotKeysDialog } from '@/sections/HotKeys/hooks';
+import { useContactsDialog } from '@/sections/ContactMe/hooks';
 import { useSidebar } from '@/sections/Sidebar/hooks';
 import { useThemeMode } from '@/theme';
 
-import { HotKeysButton } from './styled';
+import { ContactButton } from './styled';
 import { getRandomJoke } from './utils';
 
 function Header() {
   const { themeMode, toggle: toggleThemeMode } = useThemeMode();
   const { open: openSidebar } = useSidebar();
-  const { open: openHotKeysDialog } = useHotKeysDialog();
+  const { open: openDialog } = useContactsDialog();
   const notifications = useNotifications();
 
   function showNotification() {
@@ -50,15 +50,15 @@ function Header() {
             </Button>
           </Stack>
           <Stack direction="row" alignItems="center">
-            <Tooltip title="Hot keys" arrow>
-              <HotKeysButton
+            <Tooltip title="Get in touch" arrow>
+              <ContactButton
                 size="small"
                 variant="outlined"
-                aria-label="open hotkeys dialog"
-                onClick={openHotKeysDialog}
+                aria-label="open contacts dialog"
+                onClick={openDialog}
               >
-                alt + k
-              </HotKeysButton>
+                Contact Me
+              </ContactButton>
             </Tooltip>
             <Divider orientation="vertical" flexItem />
             <Tooltip title="It's open source" arrow>

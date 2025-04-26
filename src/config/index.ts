@@ -1,10 +1,10 @@
-const title = 'React PWA';
+const title = 'Heruu Js';
 
-const email = 'auther-email@gmail.com';
+const email = 'heruu.js@gmail.com';
 
-const repository = 'https://github.com/suren-atoyan/react-pwa';
+const repository = 'https://github.com/herujest';
 
-const dateFormat = 'MMMM DD, YYYY';
+const dateFormat = 'DD MMMM YYYY';
 
 const loader = {
   // no more blinking in your app

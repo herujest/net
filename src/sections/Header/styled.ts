@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 
-const HotKeysButton = styled(Button)(({ theme }) => ({
+const ContactButton = styled(Button)(({ theme }) => ({
   height: 'fit-content',
   alignSelf: 'center',
   marginRight: theme.spacing(1),
@@ -12,4 +12,4 @@ const HotKeysButton = styled(Button)(({ theme }) => ({
   color: theme.palette.text.disabled,
 }));
 
-export { HotKeysButton };
+export { ContactButton };

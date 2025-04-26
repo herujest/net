@@ -2,10 +2,10 @@ import { useCallback } from 'react';
 
 import { useAtom } from 'jotai';
 
-import { isHotKeysDialogOpenState } from './atoms';
+import { isContactDialogOpenState } from './atoms';
 
-function useHotKeysDialog() {
-  const [isOpen, setIsOpen] = useAtom(isHotKeysDialogOpenState);
+function useContactsDialog() {
+  const [isOpen, setIsOpen] = useAtom(isContactDialogOpenState);
 
   const toggle = useCallback(() => setIsOpen((isOpen) => !isOpen), [setIsOpen]);
   const close = useCallback(() => setIsOpen(false), [setIsOpen]);
@@ -19,4 +19,4 @@ function useHotKeysDialog() {
   };
 }
 
-export { useHotKeysDialog };
+export { useContactsDialog };

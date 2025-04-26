@@ -21,6 +21,6 @@ test.describe('test hotkeys', () => {
   test('using hotkey "Alt+K" opens hotkeys dialog', async ({ page }) => {
     await page.keyboard.press('Alt+K');
 
-    await expect(page.getByTestId('hotkeys-dialog')).toBeVisible();
+    await expect(page.getByTestId('contact-dialog')).toBeVisible();
   });
 });
