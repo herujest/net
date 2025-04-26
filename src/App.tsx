@@ -21,8 +21,6 @@ function App() {
         <Header />
         {/* <Sidebar /> */}
         <Pages />
-        {/* <Welcome />
-        <Page1 /> */}
       </BrowserRouter>
     </Fragment>
   );

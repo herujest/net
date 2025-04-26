@@ -3,7 +3,14 @@ import { Box, Button, Container, Typography } from '@mui/material';
 
 import { subTitle, title } from '@/config';
 
-import { ButtonContainer, GridPattern, HeroSection, ScrollButton, SubTitle, Title } from './styled';
+import {
+  ButtonContainer,
+  GridPattern,
+  ScrollButton,
+  SubTitle,
+  Title,
+  WelcomeSection,
+} from './styled';
 
 const Welcome: React.FC = () => {
   const scrollToAbout = () => {
@@ -14,7 +21,7 @@ const Welcome: React.FC = () => {
   };
 
   return (
-    <HeroSection id="home">
+    <WelcomeSection id="home">
       <GridPattern />
 
       <Container maxWidth="lg">
@@ -64,7 +71,7 @@ const Welcome: React.FC = () => {
         </Typography>
         <ArrowDownward />
       </ScrollButton>
-    </HeroSection>
+    </WelcomeSection>
   );
 };
 

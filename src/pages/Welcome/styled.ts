@@ -7,7 +7,7 @@ const Image = styled('img')({
   margin: 4,
 });
 
-const HeroSection = styled('section')({
+const WelcomeSection = styled('section')({
   position: 'relative',
   minHeight: '100vh',
   display: 'flex',
@@ -95,4 +95,4 @@ const ScrollButton = styled(Button)({
   },
 });
 
-export { Image, HeroSection, GridPattern, Title, SubTitle, ButtonContainer, ScrollButton };
+export { Image, WelcomeSection, GridPattern, Title, SubTitle, ButtonContainer, ScrollButton };

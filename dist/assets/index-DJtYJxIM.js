@@ -77,7 +77,7 @@ const y = 'modulepreload',
       return o().catch(r);
     });
   },
-  E = 'Heru Js',
+  E = 'bySupriyadies',
   _ = 'auther-email@gmail.com',
   $ = 'https://github.com/suren-atoyan/react-pwa',
   L = { delay: 300, minimumLoading: 700 };
