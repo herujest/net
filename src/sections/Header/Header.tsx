@@ -9,6 +9,14 @@ import { title } from '@/config';
 import BSIco from '../../../public/bs-ico.png';
 import { BrandText, HeaderWrapper, Image, MobileMenu, NavLink } from './styled';
 
+const handleScroll = (e, id) => {
+  e.preventDefault();
+  const section = document.querySelector(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,10 +42,18 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 4 }}>
-            <NavLink href="#home">Home</NavLink>
-            <NavLink href="#about">About</NavLink>
-            <NavLink href="#tools">Tools</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
+            <NavLink href="#home" onClick={(e) => handleScroll(e, '#home')}>
+              Home
+            </NavLink>
+            <NavLink href="#about" onClick={(e) => handleScroll(e, '#about')}>
+              About
+            </NavLink>
+            <NavLink href="#tools" onClick={(e) => handleScroll(e, '#tools')}>
+              Tools
+            </NavLink>
+            <NavLink href="#contact" onClick={(e) => handleScroll(e, '#contact')}>
+              Contact
+            </NavLink>
           </Box>
 
           {/* Mobile Menu Button */}

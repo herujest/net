@@ -9,7 +9,8 @@ import AppErrorBoundaryFallback from '@/error-handling/fallbacks/App';
 import Pages from './routes/Pages';
 import Contacts from './sections/ContactMe';
 import Header from './sections/Header';
-import Sidebar from './sections/Sidebar';
+
+// import Sidebar from './sections/Sidebar';
 
 function App() {
   return (
@@ -18,8 +19,10 @@ function App() {
       <Contacts />
       <BrowserRouter>
         <Header />
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Pages />
+        {/* <Welcome />
+        <Page1 /> */}
       </BrowserRouter>
     </Fragment>
   );

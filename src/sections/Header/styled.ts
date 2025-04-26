@@ -36,9 +36,9 @@ const HeaderWrapper = styled('header')<{ isscrolled: string }>(({ theme, isscrol
   zIndex: 50,
   transition: 'all 0.3s ease',
   backgroundColor: isscrolled === 'true' ? '#fff' : 'transparent',
-  boxShadow: isscrolled === 'true' ? theme.shadows[2] : 'none',
-  paddingTop: isscrolled === 'true' ? theme.spacing(1) : theme.spacing(2),
-  paddingBottom: isscrolled === 'true' ? theme.spacing(1) : theme.spacing(2),
+  boxShadow: isscrolled === 'true' ? theme.shadows[1] : 'none',
+  paddingTop: isscrolled === 'true' ? theme.spacing(0.1) : theme.spacing(2),
+  paddingBottom: isscrolled === 'true' ? theme.spacing(0.1) : theme.spacing(2),
 }));
 
 const NavLink = styled(Link)({

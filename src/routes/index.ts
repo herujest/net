@@ -16,7 +16,7 @@ const routes: Routes = [
     icon: HomeIcon,
   },
   {
-    component: asyncComponentLoader(() => import('@/pages/Page1')),
+    component: asyncComponentLoader(() => import('@/pages/About')),
     path: '/page-1',
     title: 'Page 1',
     icon: GitHubIcon,
