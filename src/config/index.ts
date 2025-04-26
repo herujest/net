@@ -1,4 +1,5 @@
-const title = 'Heruu Js';
+const title = 'bySupriyadies';
+const subTitle = 'Building digital tools that simplify your workflow and enhance productivity';
 
 const email = 'heruu.js@gmail.com';
 
@@ -17,4 +18,4 @@ const defaultMetaTags = {
   description: 'Starter kit for modern web applications',
 };
 
-export { loader, dateFormat, repository, email, title, defaultMetaTags };
+export { dateFormat, defaultMetaTags, email, loader, repository, subTitle, title };
