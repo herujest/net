@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import About from '@/pages/About';
 import Portfolio from '@/pages/Portfolio';
 import Welcome from '@/pages/Welcome';
+import Footer from '@/sections/Footer';
 
 import { getPageHeight } from './utils';
 
@@ -13,6 +14,7 @@ function Pages() {
       <Welcome />
       <About />
       <Portfolio />
+      <Footer />
     </Box>
   );
 }

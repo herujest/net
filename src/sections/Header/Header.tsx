@@ -9,7 +9,7 @@ import { title } from '@/config';
 import BSIco from '../../img/bs-ico.png';
 import { BrandText, HeaderWrapper, Image, MobileMenu, NavLink } from './styled';
 
-const handleScroll = (e, id) => {
+const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
   e.preventDefault();
   const section = document.querySelector(id);
   if (section) {
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X size={24} /> : <MenuIcon />}
+            {isMenuOpen ? <X /> : <MenuIcon />}
           </IconButton>
         </Box>
 
