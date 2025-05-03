@@ -6,7 +6,7 @@ import { Box, Container, IconButton } from '@mui/material';
 
 import { title } from '@/config';
 
-import BSIco from '../../../public/bs-ico.png';
+import BSIco from '../../img/bs-ico.png';
 import { BrandText, HeaderWrapper, Image, MobileMenu, NavLink } from './styled';
 
 const handleScroll = (e, id) => {

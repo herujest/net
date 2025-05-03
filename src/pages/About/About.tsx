@@ -1,12 +1,12 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import { Button, ButtonGroup, Card, Container, Link, Typography } from '@mui/material';
+import { Button, ButtonGroup, Container, Link, Typography } from '@mui/material';
 
-import BSIco from '../../../public/bs-ico.png';
-import { GradientTitle, IconWrapper, Image, LeftSide, RightSide, Section } from './styled';
+import BSIco from '../../img/bs-ico.png';
+import { Card, GradientTitle, IconWrapper, Image, LeftSide, RightSide, Section } from './styled';
 
-function Page1() {
+function AboutPage() {
   return (
     <Section id="about">
       <Container maxWidth="lg">
@@ -15,7 +15,6 @@ function Page1() {
         <Card>
           <LeftSide>
             <IconWrapper>
-              {/* <CodeIcon sx={{ fontSize: 96, color: 'white' }} /> */}
               <Image src={BSIco} />
             </IconWrapper>
           </LeftSide>
@@ -87,4 +86,4 @@ function Page1() {
   );
 }
 
-export default Page1;
+export default AboutPage;

@@ -1,2 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
 
+# Force use of nvm if available (optional, hanya kalau pakai nvm)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+nvm use 20
+
+# lanjut ke lint
 npx lint-staged

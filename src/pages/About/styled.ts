@@ -9,6 +9,9 @@ const Image = styled('img')({
 const Section = styled('section')(({ theme }) => ({
   padding: theme.spacing(12, 0),
   backgroundColor: theme.palette.grey[50],
+  minHeight: '100vh', // 👈 Tambahan penting
+  display: 'flex',
+  alignItems: 'center', // Untuk vertikal centering
   animation: 'fadeInUp 0.5s ease forwards',
   animationDelay: '0.5s',
   '@keyframes fadeInUp': {
@@ -29,7 +32,7 @@ const Card = styled(Box)(({ theme }) => ({
   boxShadow: theme.shadows[4],
   overflow: 'hidden',
   display: 'flex',
-  flexDirection: 'column',
+  flexDirection: 'column', // default for mobile
   [theme.breakpoints.up('md')]: {
     flexDirection: 'row',
   },
@@ -61,7 +64,7 @@ const GradientTitle = styled(Typography)(({ theme }) => ({
 const IconWrapper = styled(Box)(() => ({
   width: 192,
   height: 192,
-  backgroundColor: 'white',
+  backgroundColor: 'rgba(255, 255, 255, 0.2)',
   borderRadius: '50%',
   display: 'flex',
   alignItems: 'center',
