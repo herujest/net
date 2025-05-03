@@ -23,13 +23,13 @@ function AboutPage() {
             <Typography variant="h4" fontWeight="bold" color="text.primary" gutterBottom>
               bySupriyadies
             </Typography>
-            <Typography color="text.secondary" paragraph>
+            <Typography color="text.secondary">
               Hi there! we are a passionate software developer team with expertise in building
               useful tools that solve real-world problems. With over 8 years of experience both in
               web development and mobile app , We enjoy creating intuitive and efficient
               applications that help people work smarter.
             </Typography>
-            <Typography color="text.secondary" paragraph>
+            <Typography color="text.secondary">
               Our focus is on creating tools that are not only functional but also beautiful and
               easy to use. We believe that good design and solid engineering principles go hand in
               hand.

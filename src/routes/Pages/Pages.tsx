@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 
 import About from '@/pages/About';
-import Tools from '@/pages/Tools';
+import Portfolio from '@/pages/Portfolio';
 import Welcome from '@/pages/Welcome';
 
 import { getPageHeight } from './utils';
@@ -12,7 +12,7 @@ function Pages() {
       {/* <Routes>{renderRoutes(routes)}</Routes> */}
       <Welcome />
       <About />
-      <Tools />
+      <Portfolio />
     </Box>
   );
 }

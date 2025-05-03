@@ -17,13 +17,13 @@ const routes: Routes = [
   },
   {
     component: asyncComponentLoader(() => import('@/pages/About')),
-    path: '/page-1',
+    path: '/about',
     title: 'Page 1',
     icon: GitHubIcon,
   },
   {
-    component: asyncComponentLoader(() => import('@/pages/Tools')),
-    path: '/page-2',
+    component: asyncComponentLoader(() => import('@/pages/Portfolio')),
+    path: '/portfolio',
     title: 'Page 2',
     icon: AddTaskIcon,
   },

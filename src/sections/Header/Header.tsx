@@ -48,8 +48,8 @@ const Header: React.FC = () => {
             <NavLink href="#about" onClick={(e) => handleScroll(e, '#about')}>
               About
             </NavLink>
-            <NavLink href="#tools" onClick={(e) => handleScroll(e, '#tools')}>
-              Tools
+            <NavLink href="#tools" onClick={(e) => handleScroll(e, '#portfolio')}>
+              Portfolio
             </NavLink>
             <NavLink href="#contact" onClick={(e) => handleScroll(e, '#contact')}>
               Contact
